@@ -2,7 +2,7 @@
  * @Author: zhangmin
  * @Date: 2021-02-25 10:17:29
  * @LastEditors: zhangmin
- * @LastEditTime: 2021-02-25 14:53:12
+ * @LastEditTime: 2021-09-14 09:01:45
  * @Description: 文件说明
 -->
 <template>
@@ -36,7 +36,6 @@ import TabFirst from '@/view/tabs/tab_01'
 import TabSecond from '@/view/tabs/tab_02'
 import TabThree from '@/view/tabs/tab_03'
 import TabFour from '@/view/tabs/tab_04'
-
 
 export default {
   components: {

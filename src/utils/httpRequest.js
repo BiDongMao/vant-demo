@@ -2,7 +2,7 @@
  * @Author: zhangmin
  * @Date: 2021-02-25 13:32:24
  * @LastEditors: zhangmin
- * @LastEditTime: 2021-02-25 14:11:42
+ * @LastEditTime: 2021-09-14 08:57:28
  * @Description: 文件说明
  */
 
@@ -12,8 +12,8 @@ import { router } from '@/router.js';
 import qs from 'qs'
 import merge from 'lodash/merge'
 import {clearLoginInfo} from '@/utils'
-
-const baseUrl='https://w.ruiztech.cn/'
+import { URL } from "../../config/index.js";
+let { baseUrl } = URL;
 
 
 const http = axios.create({

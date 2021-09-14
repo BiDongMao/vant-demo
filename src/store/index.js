@@ -2,18 +2,21 @@
  * @Author: zhangmin
  * @Date: 2021-02-25 09:50:29
  * @LastEditors: zhangmin
- * @LastEditTime: 2021-02-25 13:40:02
+ * @LastEditTime: 2021-09-14 08:59:07
  * @Description: 文件说明
  */
 import Vue from 'vue'
 import Vuex from 'vuex'
 import createPersistedState from 'vuex-persistedstate'
 import common from './modules/common'
+import user from './modules/user'
+
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules: {
-    common
+    common,
+    user
   },
   plugins: [createPersistedState({
     storage: window.localStorage
