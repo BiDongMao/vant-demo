@@ -2,7 +2,7 @@
  * @Author: zhangmin
  * @Date: 2021-01-31 16:40:05
  * @LastEditors: zhangmin
- * @LastEditTime: 2021-09-14 09:10:49
+ * @LastEditTime: 2021-10-26 16:41:50
  * @Description: 文件说明
  */
 const path = require("path");
@@ -13,7 +13,7 @@ module.exports = {
   devServer: {
       proxy: {
           '/api': {
-              target: 'https://w.ruiztech.cn/bz/',
+              target: 'https://staff.ruiztech.cn:4443/ruiz',
               changeOrigin: true,// 允许跨域
               ws: true,
               pathRewrite: {

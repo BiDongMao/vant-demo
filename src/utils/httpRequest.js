@@ -2,7 +2,7 @@
  * @Author: zhangmin
  * @Date: 2021-02-25 13:32:24
  * @LastEditors: zhangmin
- * @LastEditTime: 2021-09-14 08:57:28
+ * @LastEditTime: 2021-10-26 16:45:17
  * @Description: 文件说明
  */
 
@@ -14,8 +14,6 @@ import merge from 'lodash/merge'
 import {clearLoginInfo} from '@/utils'
 import { URL } from "../../config/index.js";
 let { baseUrl } = URL;
-
-
 const http = axios.create({
   timeout: 1000 * 60,
   withCredentials: true,
