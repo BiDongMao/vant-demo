@@ -2,7 +2,7 @@
  * @Author: zhangmin
  * @Date: 2021-01-31 16:40:05
  * @LastEditors: zhangmin
- * @LastEditTime: 2021-10-26 16:30:09
+ * @LastEditTime: 2021-10-28 19:53:34
  * @Description: 文件说明
  */
 import Vue from 'vue';
@@ -87,13 +87,12 @@ routes.forEach(route => {
 
 const router = new Router({ routes });
 
-router.beforeEach((to, from, next) => {
+router.afterEach((to) => {
   const title = to.meta && to.meta.title;
   if (title) {
-    document.title = title;
+    window.document.title = title
   }
-  next();
-});
+})
 
 export {
   router
