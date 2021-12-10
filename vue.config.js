@@ -2,7 +2,7 @@
  * @Author: zhangmin
  * @Date: 2021-01-31 16:40:05
  * @LastEditors: zhangmin
- * @LastEditTime: 2021-10-28 15:30:52
+ * @LastEditTime: 2021-12-10 14:10:15
  * @Description: 文件说明
  */
 const path = require("path");
@@ -11,7 +11,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin"); //表示自定�
 var Timestamp = new Date().getTime();
 module.exports = {
   outputDir: 'dist',
-  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   devServer: {
       proxy: {
           '/api': {
